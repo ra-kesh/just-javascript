@@ -1,38 +1,111 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap');
+
+
+.App{
+  background-color: #FBFBFB;
+  max-width: 100%;
+  margin: auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.strip{
+   background: linear-gradient(270deg,#0AF5F4 25.28%,#09DB1F 59.7%,#F7F322 97.75%);
+   height: 3vh;
+   max-width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container-main{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  max-width: 85%;
+  margin: auto;
+  overflow: hidden;
+  
+}
+
+.container-hero{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  flex-direction: column;
+  min-height: 97vh;
+  flex-wrap: wrap;
+  /* font-size: 4vw; */
+  font-family: 'Inter', sans-serif;
+  line-height: 2%;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.text-hero{
+  /* display: flex;
+  flex-direction: column; */
+  place-items: center;
+  color: #212121;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.text-hero h1{
+  font-size: 8vw;
+  font-weight: 900;
+  letter-spacing: 0.25rem;
+  font-family: "Inter", sans-serif;
 }
+
+.text-hero p{
+  font-size: 1.6vw;
+  
+}
+
+
+
+.container-category{
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+button{
+  margin: 0 1rem 0 0;
+  padding: .5rem;
+   box-shadow: 0 1px 2px 0 rgba(60,64,67,0.302), 0 2px 6px 2px rgba(60,64,67,0.149);
+   border: none;
+   margin: 0.5rem;
+  padding: 1rem;
+  border-radius: 12px;
+  cursor: pointer;
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+  box-shadow: 0px 0px 10px #d9d9d9;
+}
+
+
+
+.container-list{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.div-video{
+  max-width: 100%;
+  padding: .5rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+  /* border: 1px solid; */
+  /* box-shadow: 0 1px 2px 0 rgba(60,64,67,0.302), 0 2px 6px 2px rgba(60,64,67,0.149); */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+  /* border-radius: 5px; */
+}
+
+.video{
+  margin:0 2rem 0 0;
+}
+
+
+
