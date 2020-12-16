@@ -7,7 +7,7 @@ const videoDb = Object.keys(database);
 
 function App() {
 
-  const [videoList, setVideoList] = useState("Closures");
+  const [videoList, setVideoList] = useState("All videos");
 
   function videoCLickHandeller(videos){
     setVideoList(videos);
@@ -36,6 +36,7 @@ function App() {
            {
               videoDb.map((videos,index)=>{
                 return <button
+                className="btn"
                 key={index}
                 onClick={()=>videoCLickHandeller(videos)}
                 > {videos}
@@ -61,6 +62,7 @@ function App() {
                       <div className="description">
                           <div>
                            <h2>{video.title}</h2>
+                           <h3>From {video.channelName}</h3>
                            </div>
                     
                       </div>
@@ -74,70 +76,6 @@ function App() {
           </div>
           
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      {/* <h1>just javascript</h1>
-      
-        {
-
-            videoDb.map((videos,index)=>{
-              return <button
-              key={index}
-              onClick={()=>videoCLickHandeller(videos)}
-              > {videos}
-              </button>; 
-            })
-        } 
-
-
-          {
-            database[videoList].map(video => (
-            <div>
-                <div>           
-                  <iframe 
-                  title={video.title}
-                  width="853" height="480" src={video.url} frameBorder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-                </div>
-                <div>
-                  <p><a href= {video.url}>full screen</a></p>
-                </div>
-           </div>
-             
-               
-              
-            ))
-          }
-          
-         */}
-
-          
-      
     </div>
   );
 }
