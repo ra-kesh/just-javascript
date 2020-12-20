@@ -22,7 +22,7 @@ function App() {
           <div className="container-hero">
            
            <div className="text-hero">
-                <h1>Just JavaScript</h1>
+                <h1>Just JavaScript.</h1>
                 <div>
                 <p>Deepdive into the world of javascript with this free curated content.</p>
                 </div>
@@ -49,8 +49,8 @@ function App() {
             {
               database[videoList].map(video=>(
 
-                  <div>
-                         <div className="div-video">
+              <div>
+                  <div className="div-video">
                       <div className="video">
                             <iframe 
                             title={video.title}
@@ -60,15 +60,15 @@ function App() {
 
                       </div>
                       <div className="description">
-                          <div>
+                          <div className="div-title">
                            <h2>{video.title}</h2>
                            <h3>From {video.channelName}</h3>
-                           </div>
+                          </div>
                     
                       </div>
-              </div>
+                </div>
 
-                  </div>
+              </div>
            
               ))
             }
